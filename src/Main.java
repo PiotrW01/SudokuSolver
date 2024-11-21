@@ -5,25 +5,10 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-
         JFrame frame = new JFrame();
         SudokuPanel panel = new SudokuPanel();
-        frame.add(panel.GetPanel(), BorderLayout.CENTER);
+        frame.add(panel);
         SetupWindow(frame);
-        SudokuSolver solver = new SudokuSolver(panel.GetCells());
-
-        SudokuSolver.Type type = SudokuSolver.Type.BRUTE_FORCE;
-        if(args.length > 0){
-            switch(args[0]){
-                case "-b":
-                    type = SudokuSolver.Type.BRUTE_FORCE;
-                    break;
-                case "-c":
-                    type = SudokuSolver.Type.CONSTRAINT_PROPAGATION;
-                    break;
-            }
-        }
-        solver.Start(type);
     }
 
     private static void SetupWindow(JFrame frame){
