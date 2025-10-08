@@ -35,6 +35,10 @@ public class SudokuSolver {
 
     public SudokuSolver(JTextField[] cells) {
         this.cells = cells;
+        for(int i = 0; i < 81; i++)
+        {
+            initialValues[i] = cells[i].getText();
+        }
     }
 
     public void reset(){
