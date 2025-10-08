@@ -1,6 +1,5 @@
-# Sudoku Solver
-
-This project is a basic sudoku solver that uses two main methods to create a solution: brute force or constraint propagation.
+# Sudokami
+Sudokami is a basic sudoku solver that uses two main methods to create a solution: brute force or constraint propagation.
 
 ## Controls
 
